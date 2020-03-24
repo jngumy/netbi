@@ -62,8 +62,8 @@ const styles = StyleSheet.create({
     child:{
         backgroundColor: 'lightgrey',
         //padding:16,
-        paddingTop:16,
-        paddingBottom:16
+       
+        paddingBottom:1
     }
   
 });

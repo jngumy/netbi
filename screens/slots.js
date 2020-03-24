@@ -186,7 +186,7 @@ export default  class slots extends React.Component {
              />            
         </View>
 
-        <Divider style={{ backgroundColor: 'lightgrey', height: height/25 }} />
+       
 
         <Accordian expanded = {true} title= {"Resultados Diarios                    Mes: "+this.state.tablaSlotsDiario.mes} data = {resultadosSlotsDiarios}/>
         
@@ -217,7 +217,16 @@ const styles = StyleSheet.create({
     backgroundColor : 'white',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingLeft: width/22
+    paddingLeft: width/22,
+    shadowColor: "#808080",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
     
   },
   textoCeldas: {

@@ -200,7 +200,7 @@ export default  class partediario extends React.Component {
               
                
           </View>
-          <Divider style={{ backgroundColor: 'lightgrey', height: height/25 }} />
+         
           
           <View style = {styles.fecha}>
               
@@ -224,7 +224,7 @@ export default  class partediario extends React.Component {
 
           </View>
 
-          <Divider style={{ backgroundColor: 'lightgrey', height: height/25 }} />
+          
                 {parteDiario}
             
         </ScrollView>

@@ -84,7 +84,7 @@ render(){
           />
                
           </View>
-          <Divider style={{ backgroundColor: 'lightgrey', height: height/25 }} />
+         
           <View style = {styles.listaOperaciones}>
               <FlatList
                   keyExtractor={this.keyExtractor}

@@ -271,11 +271,11 @@ export default class RTMensuales extends React.Component
                     <View style= {styles.vistaTexto}>
                         <Text style = {{ fontWeight:'bold',color: '#517fa4',fontSize: 13}}>Resultados Slots</Text> 
                     </View>
-                    <View style = {{justifyContent: 'center', paddingTop:16, paddingBottom:16,  alignItems: 'center', width: width}}>
+                    <View style = {{justifyContent: 'center', paddingBottom:1, alignItems: 'center', width: width}}>
                       {resultadosTotalSlotsMensual}
                     </View>
                     {headerMesas}
-                    <View style = {{justifyContent: 'center', paddingTop:16, paddingBottom:16, alignItems: 'center', width: width}}>
+                    <View style = {{justifyContent: 'center',paddingBottom:1, alignItems: 'center', width: width}}>
                        {resultadosTotalMesasMensual}
                     </View>
                 </ScrollView>

@@ -259,14 +259,14 @@ export default class RTDiarios extends React.Component
                     <View style= {styles.vistaTexto}>
                         <Text style = {{ fontSize: 13, fontWeight:'bold',color: '#517fa4',}}>Resultados Slots</Text> 
                     </View>
-                    <View style = {{justifyContent: 'center', paddingTop:16, paddingBottom:16, alignItems: 'center', width: width}}>
+                    <View style = {{justifyContent: 'center', paddingBottom:1, alignItems: 'center', width: width}}>
 
                     {resultadosTotalSlotsDiario}
                     </View>
 
                     {headerMesas}
 
-                    <View style = {{justifyContent: 'center', paddingTop:16, paddingBottom:16, alignItems: 'center', width: width}}>
+                    <View style = {{justifyContent: 'center',paddingBottom:1, alignItems: 'center', width: width}}>
                     {resultadosTotalMesasDiario}
                     </View>
                     
