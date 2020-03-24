@@ -2,14 +2,20 @@ import { createStackNavigator } from 'react-navigation-stack'
 import Operaciones from '../screens/Operaciones'
 import Salas from '../screens/Salas'
 import PantallaTres from '../screens/PantallaTres'
-import ParteDiario from '../screens/ParteDiario'
+import partediario from '../screens/partediario'
+import slots from '../screens/slots'
+import mesas from '../screens/mesas'
+import ResultadosTotales from '../screens/ResultadosTotales'
 
 const AppNavigation = createStackNavigator(
     {
       Operaciones: { screen: Operaciones },
       Salas: {screen: Salas},
       PantallaTres: {screen: PantallaTres},
-      ParteDiario: {screen: ParteDiario}
+      partediario: {screen: partediario},
+      slots: {screen: slots},
+      mesas: {screen: mesas},
+      ResultadosTotales : {screen: ResultadosTotales}
     },
     {
       initialRouteName: 'Operaciones',

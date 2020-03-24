@@ -10,7 +10,7 @@ export default class Accordian extends Component{
         super(props);
         this.state = { 
           data: props.data,
-          expanded : false,
+          expanded : props.expanded,
         }
     }
   
@@ -61,7 +61,9 @@ const styles = StyleSheet.create({
     },
     child:{
         backgroundColor: 'lightgrey',
-        padding:16,
+        //padding:16,
+        paddingTop:16,
+        paddingBottom:16
     }
   
 });

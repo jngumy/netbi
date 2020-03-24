@@ -1,6 +1,6 @@
 import React from 'react'
-import { Dimensions,FlatList,StyleSheet, Text, View } from 'react-native'
-import { Avatar, Icon ,Divider, Button, ListItem, withTheme} from 'react-native-elements'
+import {  Alert, Dimensions,ScrollView,FlatList,StyleSheet, Text, View } from 'react-native'
+import { Divider, Button, ListItem} from 'react-native-elements'
 var { height , width} = Dimensions.get('window');
 
 export default  class Salas extends React.Component {
@@ -17,9 +17,8 @@ export default  class Salas extends React.Component {
 renderItem = ({ item }) => (
   <ListItem
     title={item.name}
-    subtitle={item.subtitle}
-    leftIcon={{ name: item.icon }}
-    onPress={() => this.props.navigation.navigate('PantallaTres')}
+    leftIcon={{ name: item.icon, color: 'red' }}
+    onPress={() => this.props.navigation.navigate('PantallaTres',{data: {filtro: item.pantallaTres}})}
     
     bottomDivider
     chevron
@@ -29,20 +28,20 @@ renderItem = ({ item }) => (
     const {filtro} = this.props.navigation.state.params.data;
     let list = [];
     
-    for (let i=0; i<filtro.salas.length ; i++)
+    for (let i=0; i<filtro.salas.lista.length ; i++)
     {
-      objeto = 
-      {
-        name: filtro.salas[i].nombre,
-        subtitle: 'Sala',
+      objeto = {
+        name: filtro.salas.lista[i].nombre,
         icon: 'casino',
-       // pantallaTres: {data: {salas: filtro[i].funciones}},
-      }
-      list.push(objeto);
+        pantallaTres: {sala: filtro.salas.lista[i].id, nombre: filtro.salas.lista[i].nombre, funciones: filtro.salas.funciones, operacion: filtro.nombre, mesas: filtro.salas.lista[i].mesas},
     }
+      list.push(objeto);
 
+    }
+  
     return (
         <View style={styles.container}>
+           <ScrollView nestedScrollEnabled>
             <View style = {styles.cabecera}>
                <View style= {{width: width/4.5, height: height/7, alignItems: 'center', justifyContent: 'center',backgroundColor: 'white'}}>
                     <Text style = {{fontSize: 13,color:'black'}}>{filtro.nombre}</Text>
@@ -62,19 +61,21 @@ renderItem = ({ item }) => (
                <Button
                    title="Resultados Totales"
                    raised
-                   onPress={() => this.props.navigation.navigate('Auth')}
+                   onPress={() => this.props.navigation.navigate('ResultadosTotales',{data: {filtro: filtro}})}
                     buttonStyle= {{width: width/4, backgroundColor: 'green', height : height/15}}
                     titleStyle = {{fontSize:12}}
                />
           </View>
           <Divider style={{ backgroundColor: 'lightgrey', height: height/25 }} />
-          <View style = {styles.listaOperaciones}>
-              <FlatList
-                  keyExtractor={this.keyExtractor}
-                  data={list}
-                  renderItem={this.renderItem}
-              />
-          </View>
+        
+            <View style = {styles.listaOperaciones}>
+                <FlatList
+                    keyExtractor={this.keyExtractor}
+                    data={list}
+                    renderItem={this.renderItem}
+                />
+            </View>
+          </ScrollView>
         </View>
       )
   }
@@ -97,6 +98,15 @@ const styles = StyleSheet.create({
     backgroundColor : 'white',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingLeft: width/22
+    paddingLeft: width/22,
+    shadowColor: "#808080",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   }
 });

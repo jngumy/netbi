@@ -1,0 +1,221 @@
+{
+    "fecha-operativa": "2020-03-12",
+    "idsala": "3",
+    "Novedades del Personal": [
+        [
+            "ALEJANDRO",
+            "DOMENECH",
+            "3576",
+            "66722",
+            "Otro",
+            "0",
+            "09.03.20_ Domenech (Seguridad) licencia 5 d\u00edas por fallecimiento de la madre.",
+            "Jorge Isasi"
+        ],
+        [
+            "MIGUEL",
+            "ACOSTA",
+            "3508",
+            "66723",
+            "Licencia ordinaria",
+            "0",
+            "02.03.20_ Acosta Miguel (T\u00e9cnico) inicia Vacaciones por 28 d\u00edas periodo 2019.",
+            "Jorge Isasi"
+        ],
+        [
+            "VIVIANA",
+            "MARTINEZ",
+            "3561",
+            "66747",
+            "Tardanza",
+            "21",
+            "21 minutos tarde",
+            "Jorge Isasi"
+        ]
+    ],
+    "Novedades de m\u00e1quinas Fuera de Servicio": [
+        [
+            "50177",
+            "Otro",
+            "Se apaga monitor y no recupera funciones",
+            "1",
+            "Angel Lopez"
+        ],
+        [
+            "50292",
+            "Otro",
+            "Error de aceptador y monitor No se pudo destildar.",
+            "3",
+            "Jorge Isasi"
+        ],
+        [
+            "50286",
+            "Otro",
+            "Queda Fuera De Servicio Ingreso en error (Touch Screen Device Error)",
+            "1",
+            "Angel Lopez"
+        ],
+        [
+            "50309",
+            "Otro",
+            "17:35 hs _  MAQ. N\u00ba UID 005-309  El aceptador de Billete no arranca \"Error Gen\u00e9rico del dispositivo\" se reinicia varias veces sin resultado positivo. Queda fuera de servicio para revisi\u00f3n tecnica.",
+            "1",
+            "Jorge Isasi"
+        ]
+    ],
+    "Novedades de pagos manuales": [
+        [
+            "50305",
+            "5768.20",
+            "12:50  hs_ MAQ. N\u00ba 305 IGT, Pago manual en juego de bonus con apuestas de 300 de  0.05 centavos",
+            "27035950",
+            "Candia Luis",
+            "Jorge Isasi"
+        ],
+        [
+            "50173",
+            "6940.00",
+            "16:55 hs_ MAQ. N\u00ba 173, WMS, GAME OF DRAGONS II Pago manual en juego de bonus con apuestas 600 creditos 0,05 ctvs.",
+            "25654516",
+            "Torres Alcides",
+            "Jorge Isasi"
+        ],
+        [
+            "50306",
+            "5000.00",
+            "17:17  hs_ MAQ. N\u00b0 306 IGT, DOLPHIN BAY MFG Pago manual en juego de bonus,  con apuestas 60 creditos 0,05 ctvs.",
+            "30076525",
+            "Adriana Echeverria",
+            "Jorge Isasi"
+        ],
+        [
+            "50255",
+            "5685.00",
+            "17:33 hs MAQ. N\u00ba UID 005-255, IGT, KITTY GLITTER pago por creditos acumulados con apuestas de 105 credt 0.05",
+            "17484646",
+            "Santa Cruz Mercedes",
+            "Jorge Isasi"
+        ],
+        [
+            "50302",
+            "5001.35",
+            "18:27 hs_ MAQ. N\u00b0 302 ARISTOCRAT, Pago manual en juego de bonus con apuestas de 120 creditos de 0,05 ctvs.",
+            "34936568",
+            "Alcaraz Guillermo",
+            "Jorge Isasi"
+        ],
+        [
+            "50310",
+            "7212.50",
+            "23:10  hs MAQ. N\u00ba 310 NOVOMATIC,  Pago manual por exceso de l\u00edmite con apuestas de 1000 creditos de 0.05 en juego  (MEGA JOKER) .",
+            "11420879",
+            "Martinez Daniel",
+            "Jorge Isasi"
+        ],
+        [
+            "50310",
+            "4002.75",
+            "23:26 hs 310 NOVOMATIC, Pago por creditos acumulados en juego con apuestas de 1000 creditos de 0.05 centavos (JUEGO LILLYS WORLD)",
+            "11420879",
+            "Martinez Daniel",
+            "Jorge Isasi"
+        ],
+        [
+            "50316",
+            "21648.20",
+            "00:23  hs_ MAQ. N\u00ba 316, BALLY-ALPHA V22, 88 FORTUNES Pago Manual e juegos de bonus con apuestas de (880 cred 0,10).",
+            "12107356",
+            "Alvarez  Juana",
+            "Jorge Isasi"
+        ]
+    ],
+    "Novedades de Mantenimiento": [
+        [
+            "24385",
+            "Mantenimiento",
+            "Se controla grupo electrogeno el dia de ayer trabajo con carga por 40 minutos, se revisa luces del cartel de afura no tenia corriente electrica se reviso la termica  y encuentro que estaba abajo se levanta y enciende normalmente las luces del cartel ",
+            "Jorge Isasi"
+        ],
+        [
+            "24386",
+            "Otro",
+            "Se cambian 4 pilas de controles de tv y microfono, se realiza planillas de extintores que tenemos en la sala con sus respectivos vencimientos ",
+            "Jorge Isasi"
+        ]
+    ],
+    "Novedades de Marketing": null,
+    "Novedades de mesas": [
+        [
+            "14059",
+            "21:00hs Se da apertura a la sala convencional, sin novedad.",
+            "Mario Quintana"
+        ],
+        [
+            "14061",
+            "04:00hs La sala termino con saldo positivo. Craps: Sin movimiento \/ Ruleta 2: Sin  movimiento \/ Ruleta 1: -6.290 \/ Venta: $52.110  \/ Resultado Final: -6.290. ",
+            "Mario Quintana"
+        ],
+        [
+            "14062",
+            "Jugadores destacados en Ruleta. El Sr Mart\u00ednez con una compra de $2.000, apostando $1000 por bola con  fichas de $25, cambio en caja $3.500. El Sr Flecha con una compra de $31.000, apostando 2000 por bola con fichas de $25, cambio en caja $31.000. El Sr Escofe  con una compra de $1.800, apostando $500 por bola con fichas de $10, cambio en caja $12.000 El Sr Alegre con una compra de $1.800, apostando $500 por bola. ATTE QUINTANA MARIO\t JEFE DE JUEGO SALA CONVENCIONAL CLORINDA",
+            "Mario Quintana"
+        ]
+    ],
+    "Novedades de slots": null,
+    "Novedades de ruletas electronicas": null,
+    "Novedades de sistemas": null,
+    "Observaciones generales": [
+        [
+            "13:51 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito a la  Sra. Medina Maria  retira $ 1500.",
+            "Jorge Isasi"
+        ],
+        [
+            "14:14 hs _ Recibo un llamado de CCTV para reiniciar TVR 2. Se reinicia sin novedad.",
+            "Jorge Isasi"
+        ],
+        [
+            "14:07 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito a la Sra. Medina Maria retira $ 1500",
+            "Jorge Isasi"
+        ],
+        [
+            "4:08 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito a la Sra. Medina Maria retira $ 2000.",
+            "Jorge Isasi"
+        ],
+        [
+            "16:39 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito a la Sra. Paredes Norma retira $ 2000",
+            "Jorge Isasi"
+        ],
+        [
+            "16:13 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito al  Sr. Mendez Exequiel retira $ 5000 ",
+            "Jorge Isasi"
+        ],
+        [
+            "16:02 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito al Sr. Mendez Exequiel retira $ 5000",
+            "Jorge Isasi"
+        ],
+        [
+            "17:08 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito al Sr. Mendez Exequiel retira $ 5000 ",
+            "Jorge Isasi"
+        ],
+        [
+            "18:50 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito al Sr. Mendez Exequiel retira $ 2000",
+            "Jorge Isasi"
+        ],
+        [
+            "18:58 hs _ Saravia Gladis (Cajera) realiza operaciones con Tarjeta Debito al Sr. Mendez Exequiel retira $ 3000 ",
+            "Jorge Isasi"
+        ],
+        [
+            "SLOT TURNO TARDE: Con promedio de 22 personas jugando donde se destacaron los Sres. Candia Luis  en Maq. 305 Torrez Alcides en Maq. 173, Echeverr\u00eda Adriana  en la maq. 306 Santa Cruz  Mercedes en la Maq. 255  Se registraron  5 pagos manuales.",
+            "Jorge Isasi"
+        ],
+        [
+            "00:00 hs_ Extraccion de billetes 22 Maquinas a cargo de Lopez V. (Sup De Caja) Gomez (Seguridad) Isasi  (Jefe De Sala)",
+            "Jorge Isasi"
+        ],
+        [
+            "SLOT TURNO NOCHE: Con promedio de 21 personas jugando, donde se destacaron las Sras. \u00c1lvarez Juana en Maq. 316, Mart\u00ednez Daniel en Maq. 310, Velotto Jorge en Maq. 254, Norma Vel\u00e1zquez en Maq. 313. Se realizaron 4 pagos manuales.",
+            "Jorge Isasi"
+        ]
+    ]
+}

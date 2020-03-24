@@ -1,12 +1,9 @@
-import React from 'react'
-const host = '192.168.1.47';
+import React from 'react';
+const host = 'netbi.netgen.com.ar';
 import Icono from "react-native-vector-icons/Ionicons";
+import { AsyncStorage, StyleSheet, View, TextInput,Dimensions,TouchableOpacity,ToastAndroid, Image, Alert } from 'react-native';
+import { Icon, Text} from 'react-native-elements';
 
-import { AsyncStorage, StyleSheet, View, TextInput,Dimensions,TouchableOpacity,ToastAndroid,  Image,
-    Alert
-  } from 'react-native';
-
-import { Icon, Text} from 'react-native-elements'
 var { height , width} = Dimensions.get('window');
 
 
@@ -56,7 +53,7 @@ export default class Login extends React.Component
     data.append("usuario", this.state.usuario);
     data.append("clave", this.state.password);
     
-    fetch("http://"+host+"/API-mobile/server.php", 
+    fetch("https://"+host+"/api-mobile/server.php", 
     {
             method: 'POST',
             headers: 
@@ -77,10 +74,11 @@ export default class Login extends React.Component
       if(responseJson.rta == true)
       {
         this.storeData();
-        ToastAndroid.show('Bienvenido/a,  '+this.state.usuario,ToastAndroid.SHORT);   
-        this.props.navigation.navigate('Operaciones', {data : {filtro : responseJson.filtro, usuario: this.state.usuario}});
+        ToastAndroid.show('Bienvenido/a,  '+this.state.usuario,ToastAndroid.SHORT); 
+        //console.log(responseJson);
+        this.props.navigation.navigate('Operaciones', {data : {filtro : responseJson.filtro, avatar: responseJson.usuario}});
       }
-      else
+      else 
        if(responseJson.rta == false)  
            Alert.alert('Error al ingresar Usuario y/o Contraseña'); 
     })
