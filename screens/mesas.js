@@ -89,24 +89,29 @@ export default  class mesas extends React.Component {
     var celdas= [];
     var i=0;
 
-    celdas.push(<View style={{ backgroundColor: '#EDEBEB',flexDirection: 'row', height: height/18}}>  
-                  <Cell  data="Fecha" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                  <Cell  data="Win" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                  <Cell  data="Drop" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                </View>
+   if(data.datos != null){
+      celdas.push(<View style={{ backgroundColor: '#EDEBEB',flexDirection: 'row', height: height/18}}>  
+      <Cell  data="Fecha" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+      <Cell  data="Win" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+      <Cell  data="Drop" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+    </View>
 
     );
-    
-    data.datos.forEach(function () {       
+
+      data.datos.forEach(function () {       
       celdas.push(
       <View style={{backgroundColor: color[i%2], flexDirection: 'row', minHeight: height/18}}>  
-            <Cell  data={data.datos[i].Fecha} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
-            <Cell  data={data.datos[i].Win}textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
-            <Cell  data= {data.datos[i].Drops} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2]}}/> 
+      <Cell  data={data.datos[i].Fecha} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
+      <Cell  data={data.datos[i].Win}textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
+      <Cell  data= {data.datos[i].Drops} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2]}}/> 
       </View>
       );
       i += 1;
-    });
+      });
+   }
+   else
+       celdas.push(<View style = {{height: height/8, alignItems:'center', justifyContent:'center'}}><Text style = {{ fontWeight:'bold',fontSize: 13,color: 'grey' , textAlign: 'center'}}>No existen resultados</Text></View>);
+
     return celdas;
   }
 
@@ -115,24 +120,29 @@ export default  class mesas extends React.Component {
     var celdas= [];
     var i=0;
 
-    celdas.push(<View style={{ backgroundColor: '#EDEBEB',flexDirection: 'row', height: height/18}}>  
-                  <Cell  data="Mes" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                  <Cell  data="Win" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                  <Cell  data="Win prom por día" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
-                </View>
+    if(data.datos !=null){
+      celdas.push(<View style={{ backgroundColor: '#EDEBEB',flexDirection: 'row', height: height/18}}>  
+                    <Cell  data="Mes" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+                    <Cell  data="Win" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+                    <Cell  data="Win prom por día" textStyle = {styles.textoCabeceraCeldas} style={{alignItems: 'center',flex:1,backgroundColor: '#517fa4'}}/>
+                   </View>
+      );
 
-    );
-    
-    data.datos.forEach(function () {       
+      data.datos.forEach(function () {       
       celdas.push(
       <View style={{backgroundColor: color[i%2], flexDirection: 'row', minHeight: height/18}}>  
-            <Cell  data={data.datos[i].Mes} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
-            <Cell  data={data.datos[i].Win}textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
-            <Cell  data= {data.datos[i].WPromedio} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2]}}/> 
+      <Cell  data={data.datos[i].Mes} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
+      <Cell  data={data.datos[i].Win}textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2],}}/>
+      <Cell  data= {data.datos[i].WPromedio} textStyle = {styles.textoCeldas}  style={{alignItems: 'center',flex:1,backgroundColor: color[i%2]}}/> 
       </View>
       );
       i += 1;
-    });
+      });
+    }
+    else
+        celdas.push(<View style = {{height: height/8, alignItems:'center', justifyContent:'center'}}><Text style = {{ fontWeight:'bold',fontSize: 13,color: 'grey' , textAlign: 'center'}}>No existen resultados</Text></View>);
+
+
     return celdas;
   }
 
@@ -152,7 +162,7 @@ export default  class mesas extends React.Component {
         />
       );
     }
-
+    /*
     if (!this.state.tablaMesasDiario.datos){
       Alert.alert
                 (
@@ -196,7 +206,7 @@ export default  class mesas extends React.Component {
         </View>
       )
     }
-
+    */
     const resultadosMesasDiarios = this.procesaMesasDiarios(this.state.tablaMesasDiario);
     const resultadosMesasMensual = this.procesaMesasMensual(this.state.tablaMesasMensual);
 
